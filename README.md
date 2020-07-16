@@ -9,7 +9,7 @@ Use `main.py` file for training, evaluating and generating explanation.
 
 Example on Spam Detection Dataset:
 ```
-python main.py --csv spam.csv --hiddens 50 30 --lr 0.001 --gen_gamma 0.5 --gen_max_features 5
+python main.py --csv spam.csv --hiddens 50 30 --lr 0.001 --gen_gamma 0.5 --gen_max_features 5 --explain_units %
 ```
 
 Outputs:
