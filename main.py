@@ -107,13 +107,13 @@ def explain():
                                                     feature_selector=feature_selector)
 
     # show explanation
-    print(features[feats_idx])
+    # print(features[feats_idx])
     if scaler:
         x = scaler.inverse_transform(x.reshape(1, -1))[0]
     if args.explain_table:
         explain_table(x, x_adv, lb_org, lb_new, feats_idx, features, args.num_normal_feat)
     if args.explain_text:
-        explain_text(x, x_adv, lb_org, lb_new, feats_idx, features)
+        explain_text(x, x_adv, lb_org, lb_new, feats_idx, features, units=args.explain_units)
 
 
 if __name__ == "__main__":

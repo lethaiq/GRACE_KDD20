@@ -23,9 +23,10 @@ def explain_table(x, x_advs, y_pred, y_adv, diff_idx, features, num_normal=3):
     print("\n",df)
 
 
-def explain_text(x, x_advs, y_pred, y_adv, diff_idx, features, units=None):
-    if not units:
-        units = ["points"]*len(features)
+def explain_text(x, x_advs, y_pred, y_adv, diff_idx, features, units=["points"]):
+    if len(units) == 1 :
+        units = [units]*len(features)
+
     text = "IF "
     for feat in diff_idx:
         if x_advs[feat] != x[feat]:

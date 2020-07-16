@@ -19,6 +19,7 @@ parser.add_argument('--gen_max_iter', type=int, default=50)
 parser.add_argument('--num_normal_feat', type=int, default=3)
 parser.add_argument('--explain_table', type=int, default=1)
 parser.add_argument('--explain_text', type=int, default=1)
+parser.add_argument('--explain_units', type=str, default="points")
 
 parser.add_argument('--verbose_threshold', type=int, default=50)
 parser.add_argument('--model_temp_path', type=str, default="./model_temp.pt")
