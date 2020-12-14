@@ -4,7 +4,8 @@
 
 GRACE: Generating Concise and Informative Contrastive Sample to Explain Neural Network Model’s Prediction. Thai Le, Suhang Wang, Dongwon Lee. 26th ACM SIGKDD Int’l Conf. on Knowledge Discovery and Data Mining (KDD), Virtual. August 2020.
 
-##### (October 26) We updated the arxiv version of our paper to reflect the handling of categorical features of GRACE algorithm.
+#### (October 26) We updated the arxiv version of our paper to reflect the handling of categorical features of GRACE algorithm.
+#### (December 13) GRACE with black-box attack code is available at https://github.com/research0610/MOCHI (Thanks to the author)
 
 #### Train, Evaluation and Explanation
 Use `main.py` file for training, evaluating and generating explanation.
